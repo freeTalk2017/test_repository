@@ -2,32 +2,33 @@ package com.mitao.po;
 
 public class OrderInfo {
 
-	private String OrderID;
-	private String CmdID;
-	private String OKey;
-	private String OValue;
+	private String orderID;
+	private String cmdID;
+	private String oKey;
+	private String oValue;
 	public String getOrderID() {
-		return OrderID;
+		return orderID;
 	}
 	public void setOrderID(String orderID) {
-		OrderID = orderID;
+		this.orderID = orderID;
 	}
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
-	public String getOKey() {
-		return OKey;
+	public String getoKey() {
+		return oKey;
 	}
-	public void setOKey(String oKey) {
-		OKey = oKey;
+	public void setoKey(String oKey) {
+		this.oKey = oKey;
 	}
-	public String getOValue() {
-		return OValue;
+	public String getoValue() {
+		return oValue;
 	}
-	public void setOValue(String oValue) {
-		OValue = oValue;
+	public void setoValue(String oValue) {
+		this.oValue = oValue;
 	}
+
 }

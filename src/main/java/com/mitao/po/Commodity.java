@@ -2,33 +2,33 @@ package com.mitao.po;
 
 public class Commodity {
 	
-	private String CmdID;
-	private String CmdName;
-	private String TypeID;
-	private String BrandID;
+	private String cmdID;
+	private String cmdName;
+	private String typeID;
+	private String brandID;
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
 	public String getCmdName() {
-		return CmdName;
+		return cmdName;
 	}
 	public void setCmdName(String cmdName) {
-		CmdName = cmdName;
+		this.cmdName = cmdName;
 	}
 	public String getTypeID() {
-		return TypeID;
+		return typeID;
 	}
 	public void setTypeID(String typeID) {
-		TypeID = typeID;
+		this.typeID = typeID;
 	}
 	public String getBrandID() {
-		return BrandID;
+		return brandID;
 	}
 	public void setBrandID(String brandID) {
-		BrandID = brandID;
+		this.brandID = brandID;
 	}
 
 }

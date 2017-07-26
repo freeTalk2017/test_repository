@@ -2,32 +2,33 @@ package com.mitao.po;
 
 public class CmdURL {
 
-	private String CmdID;
-	private Byte PhotoID;
-	private String PhotoURL;
-	private String PhotoType;
+	private String cmdID;
+	private Byte photoID;
+	private String photoURL;
+	private String photoType;
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
 	public Byte getPhotoID() {
-		return PhotoID;
+		return photoID;
 	}
 	public void setPhotoID(Byte photoID) {
-		PhotoID = photoID;
+		this.photoID = photoID;
 	}
 	public String getPhotoURL() {
-		return PhotoURL;
+		return photoURL;
 	}
 	public void setPhotoURL(String photoURL) {
-		PhotoURL = photoURL;
+		this.photoURL = photoURL;
 	}
 	public String getPhotoType() {
-		return PhotoType;
+		return photoType;
 	}
 	public void setPhotoType(String photoType) {
-		PhotoType = photoType;
+		this.photoType = photoType;
 	}
+
 }

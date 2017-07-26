@@ -2,25 +2,26 @@ package com.mitao.po;
 
 public class Brand {
 
-	private String BrandID;
-	private String BrandName;
-	private String CmdID;
+	private String brandID;
+	private String brandName;
+	private String cmdID;
 	public String getBrandID() {
-		return BrandID;
+		return brandID;
 	}
 	public void setBrandID(String brandID) {
-		BrandID = brandID;
+		this.brandID = brandID;
 	}
 	public String getBrandName() {
-		return BrandName;
+		return brandName;
 	}
 	public void setBrandName(String brandName) {
-		BrandName = brandName;
+		this.brandName = brandName;
 	}
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
+	
 }

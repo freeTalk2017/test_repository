@@ -4,17 +4,10 @@
 <mapper namespace="com.mitao.dao.BrandDao">  
 <!--设置domain类和数据库中表的字段一一对应，注意数据库字段和domain类中的字段名称不致，此处一定要！-->  
     <resultMap id="BaseResultMap" type="com.mitao.po.Brand">  
-        <id column="UserID" property="UserID" jdbcType="VARCHAR" />  
-        <result column="Name" property="Name" jdbcType="VARCHAR" />  
-        <result column="Password" property="Password" jdbcType="VARCHAR" />  
-        <result column="Phone" property="Phone" jdbcType="VARCHAR" />  
-        <result column="Role" property="Role" jdbcType="Byte" />  
-        <result column="RegisterTime" property="RegisterTime" jdbcType="TIMESTAMP" />  
-        <result column="LoginTime" property="LoginTime" jdbcType="TIMESTAMP" />  
-        <result column="LoginIP" property="LoginIP" jdbcType="VARCHAR" />  
+        <id column="brandID" property="brand_id" jdbcType="VARCHAR" />
     </resultMap>  
     <!-- 查询单条记录 -->  
-    <select id="selectUserByUserId" parameterType="String" resultMap="BaseResultMap">  
+    <select id="selectCommoditysByBrandName" parameterType="String" resultMap="BaseResultMap">  
         SELECT * FROM t_user WHERE USER_ID = #{UserID}  
     </select>  
 </mapper>  

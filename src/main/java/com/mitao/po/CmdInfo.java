@@ -2,40 +2,41 @@ package com.mitao.po;
 
 public class CmdInfo {
 
-	private String CmdID;
-	private String Info;
-	private String Feature;
-	private String Size;
-	private String Detail;
+	private String cmdID;
+	private String info;
+	private String feature;
+	private String size;
+	private String detail;
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
 	public String getInfo() {
-		return Info;
+		return info;
 	}
 	public void setInfo(String info) {
-		Info = info;
+		this.info = info;
 	}
 	public String getFeature() {
-		return Feature;
+		return feature;
 	}
 	public void setFeature(String feature) {
-		Feature = feature;
+		this.feature = feature;
 	}
 	public String getSize() {
-		return Size;
+		return size;
 	}
 	public void setSize(String size) {
-		Size = size;
+		this.size = size;
 	}
 	public String getDetail() {
-		return Detail;
+		return detail;
 	}
 	public void setDetail(String detail) {
-		Detail = detail;
+		this.detail = detail;
 	}
+
 	
 }

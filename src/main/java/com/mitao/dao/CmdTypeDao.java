@@ -4,7 +4,7 @@ import java.util.Set;
 
 import com.mitao.po.Brand;
 
-public interface CommodityTypeDao {
+public interface CmdTypeDao {
 
 	public Set<Brand> selectBrandsByType(String Type);
 }

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>    
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mitao.dao.CartDao">  
 <!--设置domain类和数据库中表的字段一一对应，注意数据库字段和domain类中的字段名称不致，此处一定要！-->  
-    <resultMap id="BaseResultMap" type="com.mitao.po.CartDao">  
-        <id column="recordID" property="record_id" jdbcType="VARCHAR" />
-        <result column="quantity" property="quantity" jdbcType="VARCHAR" />
-        <association property="user" column="user_id" javaType="com.mitao.po.User">
-        	<id property="userID" column="user_id"/>
+    <resultMap id="BaseResultMap" type="com.mitao.po.Cart">  
+        <id property="recordID" column="record_id" jdbcType="VARCHAR" />
+        <result property="quantity" column="quantity" jdbcType="VARCHAR" />
+        <association property="cmdID" column="cmd_id" javaType="com.mitao.po.Commodity">
+        	<result property="cmdName" column="cmd_name" jdbcType="VARCHAR" />
         </association> 
+        <association property="cmdID" column="cmd_id" javaType="com.mitao.po.CmdURL">
+        	<result property="photoURL" column="photo_url" jdbcType="VARCHAR" />
+        </association>
     </resultMap>  
     <!-- 查询单条记录 -->  
-    <select id="selectCartsByUserID" parameterType="String" resultType="java.util.List">  
-        SELECT * FROM Cart WHERE USER_ID = #{UserID}  
-    </select>  
-</mapper>
+    <select id="selectCartsByUserID" parameterType="String" resultMap="BaseResultMap">  
+        SELECT C.record_id,C.quantity,C.cmdID,CMD.cmdName,URL.photo_url
+        FROM t_Cart C left join t_Commodity CMD on C.cmd_id=CMD.cmd_id
+        left join t_CmdURL URL on C.cmd_id=URL.cmd_id
+        WHERE USER_ID = #{UserID} and photo_id=1
+    </select>
+</mapper> 

@@ -4,75 +4,75 @@ import java.sql.Timestamp;
 
 public class Order {
 
-	private String OrderID;
-	private String UserID;
-	private Timestamp CreateTimeStamp;
-	private String OrderStatus;
-	private String Distribution;
-	private String BillType;
-	private String BillHeader;
-	private String BillDetail;
-	private Byte Payment;
-	private Byte PayType;
+	private String orderID;
+	private String userID;
+	private Timestamp createTimeStamp;
+	private String orderStatus;
+	private String distribution;
+	private String billType;
+	private String billHeader;
+	private String billDetail;
+	private Byte payment;
+	private Byte payType;
 	public String getOrderID() {
-		return OrderID;
+		return orderID;
 	}
 	public void setOrderID(String orderID) {
-		OrderID = orderID;
+		this.orderID = orderID;
 	}
 	public String getUserID() {
-		return UserID;
+		return userID;
 	}
 	public void setUserID(String userID) {
-		UserID = userID;
+		this.userID = userID;
 	}
 	public Timestamp getCreateTimeStamp() {
-		return CreateTimeStamp;
+		return createTimeStamp;
 	}
 	public void setCreateTimeStamp(Timestamp createTimeStamp) {
-		CreateTimeStamp = createTimeStamp;
+		this.createTimeStamp = createTimeStamp;
 	}
 	public String getOrderStatus() {
-		return OrderStatus;
+		return orderStatus;
 	}
 	public void setOrderStatus(String orderStatus) {
-		OrderStatus = orderStatus;
+		this.orderStatus = orderStatus;
 	}
 	public String getDistribution() {
-		return Distribution;
+		return distribution;
 	}
 	public void setDistribution(String distribution) {
-		Distribution = distribution;
+		this.distribution = distribution;
 	}
 	public String getBillType() {
-		return BillType;
+		return billType;
 	}
 	public void setBillType(String billType) {
-		BillType = billType;
+		this.billType = billType;
 	}
 	public String getBillHeader() {
-		return BillHeader;
+		return billHeader;
 	}
 	public void setBillHeader(String billHeader) {
-		BillHeader = billHeader;
+		this.billHeader = billHeader;
 	}
 	public String getBillDetail() {
-		return BillDetail;
+		return billDetail;
 	}
 	public void setBillDetail(String billDetail) {
-		BillDetail = billDetail;
+		this.billDetail = billDetail;
 	}
 	public Byte getPayment() {
-		return Payment;
+		return payment;
 	}
 	public void setPayment(Byte payment) {
-		Payment = payment;
+		this.payment = payment;
 	}
 	public Byte getPayType() {
-		return PayType;
+		return payType;
 	}
 	public void setPayType(Byte payType) {
-		PayType = payType;
+		this.payType = payType;
 	}
 	
 }

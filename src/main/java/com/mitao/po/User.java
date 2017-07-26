@@ -4,60 +4,61 @@ import java.sql.Timestamp;
 
 public class User {
 
-	private String UserID;
-	private String Name; 
-	private String Password;
-	private String Phone;
-	private Byte Role; 
-	private Timestamp RegisterTime; 
-	private Timestamp LoginTime;
-	private String LoginIP;
+	private String userID;
+	private String name; 
+	private String password;
+	private String phone;
+	private Byte role; 
+	private Timestamp registerTime; 
+	private Timestamp loginTime;
+	private String loginIP;
 	public String getUserID() {
-		return UserID;
+		return userID;
 	}
 	public void setUserID(String userID) {
-		UserID = userID;
+		this.userID = userID;
 	}
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 	public String getPhone() {
-		return Phone;
+		return phone;
 	}
 	public void setPhone(String phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	public Byte getRole() {
-		return Role;
+		return role;
 	}
 	public void setRole(Byte role) {
-		Role = role;
+		this.role = role;
 	}
 	public Timestamp getRegisterTime() {
-		return RegisterTime;
+		return registerTime;
 	}
 	public void setRegisterTime(Timestamp registerTime) {
-		RegisterTime = registerTime;
+		this.registerTime = registerTime;
 	}
 	public Timestamp getLoginTime() {
-		return LoginTime;
+		return loginTime;
 	}
 	public void setLoginTime(Timestamp loginTime) {
-		LoginTime = loginTime;
+		this.loginTime = loginTime;
 	}
 	public String getLoginIP() {
-		return LoginIP;
+		return loginIP;
 	}
 	public void setLoginIP(String loginIP) {
-		LoginIP = loginIP;
+		this.loginIP = loginIP;
 	}
+
 }

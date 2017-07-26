@@ -2,25 +2,26 @@ package com.mitao.po;
 
 public class CmdParam {
 
-	private String CmdID;
-	private String CmdKey;
-	private String CmdValue;
+	private String cmdID;
+	private String cmdKey;
+	private String cmdValue;
 	public String getCmdID() {
-		return CmdID;
+		return cmdID;
 	}
 	public void setCmdID(String cmdID) {
-		CmdID = cmdID;
+		this.cmdID = cmdID;
 	}
 	public String getCmdKey() {
-		return CmdKey;
+		return cmdKey;
 	}
 	public void setCmdKey(String cmdKey) {
-		CmdKey = cmdKey;
+		this.cmdKey = cmdKey;
 	}
 	public String getCmdValue() {
-		return CmdValue;
+		return cmdValue;
 	}
 	public void setCmdValue(String cmdValue) {
-		CmdValue = cmdValue;
+		this.cmdValue = cmdValue;
 	}
+
 }

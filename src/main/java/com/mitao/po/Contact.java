@@ -2,81 +2,83 @@ package com.mitao.po;
 
 public class Contact {
 
-	private String ContactID;
-	private String OrderID;
-	private String UserID;
-	private String ContactAddress;
-	private String Phone;
-	private String Name;
-	private String UserId;
-	private String Province;
-	private String City;
-	private String District;
-	private String Street;
-	public String getOrderID() {
-		return OrderID;
-	}
-	public void setOrderID(String orderID) {
-		OrderID = orderID;
-	}
+	private String contactID;
+	private String orderID;
+	private String userID;
+	private String contactAddress;
+	private String phone;
+	private String name;
+	private String userId;
+	private String province;
+	private String city;
+	private String district;
+	private String street;
 	public String getContactID() {
-		return ContactID;
+		return contactID;
 	}
 	public void setContactID(String contactID) {
-		ContactID = contactID;
+		this.contactID = contactID;
+	}
+	public String getOrderID() {
+		return orderID;
+	}
+	public void setOrderID(String orderID) {
+		this.orderID = orderID;
 	}
 	public String getUserID() {
-		return UserID;
+		return userID;
 	}
 	public void setUserID(String userID) {
-		UserID = userID;
+		this.userID = userID;
 	}
 	public String getContactAddress() {
-		return ContactAddress;
+		return contactAddress;
 	}
 	public void setContactAddress(String contactAddress) {
-		ContactAddress = contactAddress;
+		this.contactAddress = contactAddress;
 	}
 	public String getPhone() {
-		return Phone;
+		return phone;
 	}
 	public void setPhone(String phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	public String getUserId() {
-		return UserId;
+		return userId;
 	}
 	public void setUserId(String userId) {
-		UserId = userId;
+		this.userId = userId;
 	}
 	public String getProvince() {
-		return Province;
+		return province;
 	}
 	public void setProvince(String province) {
-		Province = province;
+		this.province = province;
 	}
 	public String getCity() {
-		return City;
+		return city;
 	}
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 	public String getDistrict() {
-		return District;
+		return district;
 	}
 	public void setDistrict(String district) {
-		District = district;
+		this.district = district;
 	}
 	public String getStreet() {
-		return Street;
+		return street;
 	}
 	public void setStreet(String street) {
-		Street = street;
+		this.street = street;
 	}
+
+	
 }
